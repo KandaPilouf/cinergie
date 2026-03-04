@@ -1640,3 +1640,50 @@ a {
     margin-right: 2rem;
   }
 }
+
+/*****CSS Homepage*****/
+
+.entrevues_film{
+  margin-left: 6.25rem;
+  margin-top: 2.188rem;
+}
+.entrevues {
+  color: #E70000 ;
+}
+.entrevues_item {
+  border-radius: 42px;
+  box-shadow: 0 4px 11px black;
+  height: 24rem;
+  width:24rem;
+}
+.entrevues_img {
+  height: 50% ;
+  width: 100% ;
+  border-radius: 42px 42px 0 0;
+  
+}
+.entrevues_date {
+  margin-left: 0.6rem;
+  margin-top: 0.5rem;
+}
+.entrevues_title {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-size: 1.1rem;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.regard_cinema {
+  margin-left: 6.25rem;
+  margin-top: 2.188rem;
+}
+.regard {
+  color: #E70000 ;
+}
+
+
