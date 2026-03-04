@@ -2062,10 +2062,9 @@ a {
   }
 }
 
-
 /********CSS Homepage********/
- /***** entrevues filmées *****/
-       /* sous-titre */
+/***** entrevues filmées *****/
+/* sous-titre */
 .entrevues_film {
   margin-left: 7%;
   margin-right: 7%;
@@ -2083,7 +2082,7 @@ a {
 }
 
 .entrevues {
-  color: #E70000 ;
+  color: #e70000;
 }
 .wrapper {
   display: flex;
@@ -2099,13 +2098,11 @@ a {
   width: 22rem;
   margin: 2rem;
   box-shadow: 0px 1px 7px 0px black;
-  
 }
 .homepage_img {
   height: 50%;
   width: 100%;
   border-radius: 42px 42px 0 0;
-  
 }
 /* les dates (entrevues et regard */
 .homepage_date {
@@ -2121,7 +2118,7 @@ a {
   font-size: 1.1rem;
   align-items: center;
 }
-.homepage_click{
+.homepage_click {
   text-transform: capitalize;
   margin-left: 7%;
   color: #e70000;
@@ -2145,7 +2142,7 @@ a {
   margin: 0 auto;
 }
 .regard {
-  color: #E70000 ;
+  color: #e70000;
 }
 /**** le side scroll sur mobile ****/
 @media screen and (max-width: 1250px) {
@@ -2156,7 +2153,6 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1rem;
-    
   }
   .wrapper::-webkit-scrollbar {
     height: 8px;
@@ -2177,7 +2173,6 @@ a {
     line-height: 110px;
   }
 }
-
 
 /**** rendez-vous avec le cinema Belge ****/
 /* sous-titre */
@@ -2251,15 +2246,15 @@ a {
 
 .article_main_img {
   border-radius: 7px;
-  width: 80%; 
+  width: 80%;
 }
-.article_title{
+.article_title {
   margin-top: 1rem;
 }
 .span_article_title {
   color: #e70000;
 }
-.article_svg_container{
+.article_svg_container {
   display: flex;
   gap: 0.5rem;
 }
@@ -2274,15 +2269,13 @@ a {
   padding: 0;
 }
 
-.article_intro{
+.article_intro {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
 .dash {
   color: #e70000;
 }
-
-
 
 .share_socials {
   font-size: 0.9rem;
@@ -2299,17 +2292,14 @@ a {
   transform: translateY(27px);
   margin: 0 auto;
 }
-.article_click{
+.article_click {
   text-align: end;
   margin-right: 0.6rem;
   color: #e70000;
 }
 
-
-
-  .nh-text {
-    line-height: 1.75;
-  }
+.nh-text {
+  line-height: 1.75;
 }
 
 /* CSS BOUTIQUE */
