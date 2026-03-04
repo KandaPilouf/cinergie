@@ -1641,20 +1641,31 @@ a {
   }
 }
 
-/*****CSS Homepage*****/
+/********CSS Homepage********/
 
 .entrevues_film{
-  margin-left: 6.25rem;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-top: 2.188rem;
+}
+.entrevues_film::after {
+  content: "";
+  width: auto;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  transform: translateY(27px);
+  margin: 0 auto;
 }
 .entrevues {
   color: #E70000 ;
 }
 .homepage_item {
   border-radius: 42px;
-  box-shadow: 0 4px 11px black;
-  height: 23rem;
-  width: 23rem;
+  box-shadow: 0px 1px 7px 0px black;
+  height: 22rem;
+  width: 22rem;
+  margin: 2rem;
 }
 .homepage_img {
   height: 50% ;
@@ -1683,8 +1694,18 @@ a {
   
 }
 .regard_cinema {
-  margin-left: 6.25rem;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-top: 2.188rem;
+}
+.regard_cinema::after {
+  content: "";
+  width: auto;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  transform: translateY(27px);
+  margin: 0 auto;
 }
 .regard {
   color: #E70000 ;
@@ -1698,7 +1719,7 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1rem;
-    padding: 1rem;
+    
   }
   .wrapper::-webkit-scrollbar {
     height: 8px;
@@ -1720,14 +1741,55 @@ a {
   }
 }
 
+
+
 .rendez_vous_cine {
-  margin-left: 6.25rem;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-top: 2.188rem;
 }
+.rendez_vous_cine::after {
+  content: "";
+  width: auto;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  transform: translateY(27px);
+  margin: 0 auto;
+}
+
 .vos_rendez_vous {
   color: #E70000 ;
 }
+.poster_text_rdv {
+  display: flex;
+  margin-left: ;
+  text-wrap: wrap;
+  padding-right: 1rem;
+}
 
+.grid1_btn_rdv{
+  width: 100%;
+  background-color: var(--bs-primary);
+  border: solid 1px black;
+  text-align: center;
+  border-radius: 0 0 13px 13px;
+  /* margin-top: 1rem; */
+  border-color: var(--bs-primary);
+
+}
+
+.grid_layout_rdv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 1rem;
+  row-gap: 1rem;
+  gap: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  
+}
 
 
 
