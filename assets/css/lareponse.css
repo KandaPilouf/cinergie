@@ -2100,7 +2100,7 @@ a {
 .homepage_title {
   width: 100%;
   color: #000;
-  text-align: center;
+  margin-left: 0.6rem;
   font-size: 1.1rem;
   align-items: center;
 }
@@ -2256,8 +2256,26 @@ a {
 
 
 
-
-
+.share_socials {
+  font-size: 0.9rem;
+}
+.content_title {
+  margin-top: 2rem;
+}
+.content_title::after {
+  content: "";
+  width: auto;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  transform: translateY(27px);
+  margin: 0 auto;
+}
+.article_click{
+  text-align: end;
+  margin-right: 0.6rem;
+  color: #e70000;
+}
 
 
 
