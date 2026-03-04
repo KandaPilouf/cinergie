@@ -271,14 +271,7 @@
 </header>
 
 
-<p id="js-warning" style="display:none;
-  background:#ffdddd; padding:1rem; border:1px solid #cc0000;
-  font-family:system-ui; font-size:1.1rem; text-align:center;">
-    Certaines fonctionnalités du site sont désactivées.
-    <br>JavaScript ne peut pas fonctionner correctement.
-    <br><strong>Merci d’autoriser JavaScript sur ce domaine.</strong>
-    <br><span id="js-warning-detail" style="font-size:0.9rem; color:#990000;"></span>
-</p>
+
 
 <script nonce="49f403fe072de37b614dadcf6538c14d">
     if(!localStorage.getItem('otto-cache-set'))
@@ -454,343 +447,45 @@
     })();
 </script>    <main id="Event" class="fixed-layout">
 
-        <h1>L'agenda du cinéma belge en Belgique</h1>        
-<nav role="navigation">
-    <h2>
-        <a href="/agenda/2026/03" class="text-primary otto-date" otto-format="%7B%22month%22%3A%22long%22%7D">2026-03-03</a>
-        2026    </h2>
-    <ol>
-        <li><a href="/agenda/2026/02#listing-agenda" title="Mois précédent" aria-label="Mois précédent">
-                < <span class="otto-date" otto-format="%7B%22month%22%3A%22long%22%2C%22year%22%3A%22numeric%22%7D">2026-02-03</span>
-            </a></li>
-        <li>
-            <a href="/agenda/2026/04#listing-agenda" title="Mois suivant" aria-label="Mois suivant">
-                <span class="otto-date" otto-format="%7B%22month%22%3A%22long%22%2C%22year%22%3A%22numeric%22%7D">2026-04-03</span> >
-            </a>
-        </li>
-    </ol>
-    
-</nav>
+        <h1 class="calendar_title">L'agenda du cinéma <span class="calendar_title_half">belge en Belgique</span></h1>
+        
+        <div class="calendar_current_month">
+            <p>mars <span class="calendar_current_month_half">2026</span></p>    
+        </div>
 
-<div id="listing-agenda">
-    <hr>
-    <div id="agenda-widget">
-        <div class="text-center">
-    <div class="my-2" id="fullcalendar-filters">
-        <button class="btn event-cat-all" id="allEvents">Tous</button>
-                    <button class="btn event-cat-festival" id="event-cat-festival">Festival</button>
-                    <button class="btn event-cat-_autre_agenda" id="event-cat-_autre_agenda">Projection</button>
-                    <button class="btn event-cat-sortie_en_salle" id="event-cat-sortie_en_salle">Sortie</button>
+        <div class="calendar_month_select">
+            <p>< février</p>
+            <p>avril ></p>    
+        </div>
+
+        <div class="calendar_filter">
+            <button class="calendar_filter1">Projection</button>
+            <button class="calendar_filter2">Sorti</button>  
+            <button class="calendar_filter3">Festival</button>
+        </div>
+        
+        <div class="grid_layout">
+            <div class="calendar_grid1">
+                <div class="poster_text">
+                        <div class="grid1_img"><img height="164px"
+                        width="133px" src="../assets/images/affiche_anima_2.webp" alt="Marcel et Monsieur Pagnol"></div>
+                    <div class="grid1_text">
+                        <p>ANIMA: Marcel et Monsieur Pagnol</p>
+                        <p>01 MARS</p>
+                        <p>festival</p>
+                    </div>
+                </div>
+                <div class="grid1_info_btn">
+                    <a href="/">Plus d'info</a>
+                </div>
             </div>
-    <div id="calendar"></div>
-</div>
-
-<!-- Modal -->
-<div class=" modal fade" id="fullCalModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 id="modalTitle" class="modal-title"></h4>
-                <button type="button" class="btn-close  btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div id="modalBody" class="modal-body">
-                <strong id="modalBodyDescription"></strong><br><br>
-                <a id="eventUrlInternal" class="btn btn-primary" target="_blank" style="margin-right: 1em; display: inline-block;" href="">Infos Cinergie</a>
-                <a id="eventUrlExternal" class="btn btn-primary" target="_blank" href="" style="display: inline-block;">Infos pratiques</a>
-            </div>
-        </div>
-    </div>
-</div>    </div>
-
-        <a href="https://stage.cinergie.be/article/a-notre-sante" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>03</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-03</span>
+            <div class="calendar_grid2">2</div>
+            <div class="calendar_grid3">3</div>
+            <div class="calendar_grid4">4</div>
+            <div class="calendar_grid5">5</div>
         </div>
 
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>À notre santé de Marinette Mormont à la maison médicale Médecine pour le peuple de Marcinelle</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-03</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
 
-    </a>
-    <a href="https://stage.cinergie.be/film/dust-d-anke-blonde" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>03</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-03</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>Dust d'Anke Blondé au cinéma Galeries à 21h15</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-03</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://www.cinergie.be/film/real-faces" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>04</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-04</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:82">82</strong>
-            <h5>Real Faces de Leni Huyghe</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-02-02</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://stage.cinergie.be/film/colette-et-justin" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>05</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-05</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>Colette et Justin d'Alain Kassanda au Cinéma Galeries à 18h45</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-05</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://www.cinergie.be/article/bandes-d-hysteriques-de-kita-bauchet" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>05</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-05</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>Avant-première : Bandes d'hystériques de Kita Bauchet au Palace à 19h</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-05</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://stage.cinergie.be/article/a-notre-sante" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>05</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-05</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>À notre santé de Marinette Mormont à Bruxelles Laïque</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-05</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://www.cinergie.be/organisation/love-international-film-festival-de-mons" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>06</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-06</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:79">79</strong>
-            <h5>Love International Film Festival de Mons 41e édition</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-14</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://stage.cinergie.be/film/je-pars-a-la-mer" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>06</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-06</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>Avant-première: Je pars à la mer au cinéma NOVA à 19h</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-06</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://www.cinergie.be/article/dreamwall-au-festival-anima-le-tresor-de-barracuda" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>07</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-07</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:79">79</strong>
-            <h5>Love International film Festival - Le Trésor de Barracuda</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">0002-03-07</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://stage.cinergie.be/film/samia-20250424104400" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>07</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-07</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>Samia de Yasemin Samdereli</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-07</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://stage.cinergie.be/article/mary-anning-de-marcel-barelli" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>07</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-07</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>Mary Anning de Marcel Barelli</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-07</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://www.cinergie.be/actualites/la-colline-aux-cailloux-marjolaine-perreten" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>07</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-07</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:79">79</strong>
-            <h5>Festival À Travers Champ - La Colline aux cailloux de Marjolaine Perreten</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-01-14</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://www.cinergie.be/film/fils-de-debardeur" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>09</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-09</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:79">79</strong>
-            <h5>Festival À Travers Champ - Fils de debardeur de Didier Nechelput</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-01-14</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://stage.cinergie.be/article/a-notre-sante" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>10</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-10</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>À notre santé de Marinette Mormont à l’Intergroupe des Maisons Médicales de Charleroi</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-10</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://www.liff-mons.be/fr/film/lage-mur/" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>10</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-10</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:79">79</strong>
-            <h5>Love International film Festival de Mons - L'Âge mûr de Jean-Benoit Ugeux</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-11</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-    <a href="https://www.cinergie.be/actualites/les-femmes-preferent-en-rire-de-marie-mandy" target="_blank">
-    <article class="event shadow p-0 listing mb-3 px-lg-0">
-        <div class="date-item">
-            <span>10</span>
-            <span class="otto-date text-uppercase" otto-format="{" month":"short"}"="">2026-03-10</span>
-        </div>
-
-        <div>
-            <strong class="otto-id-label" otto-urn="Tag:81">81</strong>
-            <h5>Fenêtre sur Doc : Les femmes préfèrent en rire de Marie Mandy</h5>
-            <div class="details">
-                <small>jusqu'au <span class="otto-date" otto-format="{" day":="" "numeric","month":="" "long","year":="" "numeric"}"="">2026-03-11</span></small>
-                <small class="cta">En savoir plus</small>
-            </div>
-        </div>
-    </article>
-
-    </a>
-</div>
 
 <script nonce="49f403fe072de37b614dadcf6538c14d">
     document.addEventListener('DOMContentLoaded', function() {
