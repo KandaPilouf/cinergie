@@ -91,7 +91,7 @@
   --nh-body-lh: 1.6; /* line-height */
   --nh-item-space: 26px; /* espace entre items */
 }
-/* 
+/*
 [data-theme="dark"] {
     --primary: #D3121B;
 
@@ -275,7 +275,7 @@ body > header nav li {
 }
 
 body > main:not(#Home) {
-  padding: 1rem 0.5rem;
+  padding: 1rem 2rem;
   /* 50px = 3.125em */
 }
 
@@ -1500,6 +1500,10 @@ a {
   color: var(--bs-primary);
 }
 
+.calendar_month_select > p:hover {
+  cursor: pointer;
+}
+
 .calendar_month_select > p {
   margin: 0;
 }
@@ -1595,11 +1599,12 @@ a {
   box-shadow: 0px 4px 11px 0px rgb(0 0 0 / 25%);
   min-width: 337px;
   align-self: center;
-  transition: transform 0.3s linear;
+  transition: transform 0.2s linear;
 }
 
 .calendar_grid1:hover {
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 .poster_text {
@@ -1637,8 +1642,19 @@ a {
   margin: 0;
   height: 50%;
   align-items: center;
-  color: #8548a8;
   font-weight: bolder;
+}
+
+.projection_color {
+  color: #8548a8;
+}
+
+.festival_color {
+  color: #4d86d2;
+}
+
+.sortie_color {
+  color: var(--bs-primary);
 }
 
 .grid1_info_btn {
@@ -2290,3 +2306,162 @@ a {
 
 
 
+  .nh-text {
+    line-height: 1.75;
+  }
+}
+
+/* CSS BOUTIQUE */
+
+/* TITLE */
+
+.boutique_title {
+  line-height: 2rem;
+  text-align: left;
+}
+
+.boutique_title_half {
+  color: var(--bs-primary);
+}
+
+/* SEARCHBAR */
+
+.boutique_search {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2rem;
+  border: solid 1px black;
+  border-radius: 18px;
+  gap: 0.5rem;
+  max-width: 550px;
+}
+
+.searchbar {
+  border: none;
+  border-right: solid 1px red;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  width: 80%;
+}
+
+.searchbar_loupe {
+  height: auto;
+}
+
+/* BOUTIQUE FILTERS */
+
+.boutique_lists {
+  display: flex;
+  margin: 2rem auto;
+  align-items: center;
+  width: 360px;
+  justify-content: space-between;
+}
+
+.boutique_lists_filter {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter_dvd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bs-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 33px;
+  width: 89px;
+  font-weight: bold;
+}
+
+.filter_livres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: var(--bs-primary);
+  border: none;
+  border-radius: 4px;
+  border: solid 2px var(--bs-primary);
+  height: 33px;
+  width: 89px;
+  font-weight: bold;
+}
+
+.boutique_lists_shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: var(--bs-primary);
+  border-radius: 8px;
+  border: solid 2px var(--bs-primary);
+  height: 33px;
+  width: 70px;
+  font-weight: bold;
+}
+
+/* BOUTIQUE ITEMS */
+
+.boutique_item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 1rem;
+  width: 100%;
+}
+
+.boutique_item_img img {
+  object-fit: fill;
+}
+
+.boutique_item_details {
+  border-radius: 11px;
+  box-shadow: 0px 4px 11px 0px rgb(0 0 0 / 25%);
+  width: 100%;
+  max-width: 360px;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.boutique_item_details > p {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.boutique_item_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.boutique_item_genre {
+  color: var(--bs-primary);
+}
+
+.boutique_item_name {
+  font-weight: bold;
+}
+
+.boutique_item_btn > button {
+  border: solid 2px var(--bs-primary);
+  border-radius: 11px;
+  background-color: white;
+  width: 132px;
+  height: 44px;
+  font-weight: bold;
+}
+
+.boutique_item_btn > button:hover {
+  cursor: pointer;
+  background-color: var(--bs-primary);
+  color: white;
+}
