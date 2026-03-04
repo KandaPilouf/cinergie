@@ -2047,12 +2047,14 @@ a {
 
 
 /********CSS Homepage********/
-
+ /***** entrevues filmées *****/
+       /* sous-titre */
 .entrevues_film {
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 2.188rem;
 }
+/* ligne rouge sous le sous-titre */
 .entrevues_film::after {
   content: "";
   width: auto;
@@ -2062,18 +2064,17 @@ a {
   transform: translateY(27px);
   margin: 0 auto;
 }
-.entrevues_film::after {
-  content: "";
-  width: auto;
-  height: 3px;
-  background: var(--primary);
-  display: block;
-  transform: translateY(27px);
-  margin: 0 auto;
-}
+
 .entrevues {
   color: #E70000 ;
 }
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+/* les cards (entrevues et regards) */
 .homepage_item {
   border-radius: 42px;
   box-shadow: 0px 1px 7px 0px black;
@@ -2089,11 +2090,13 @@ a {
   border-radius: 42px 42px 0 0;
   
 }
+/* les dates (entrevues et regard */
 .homepage_date {
   margin-left: 0.6rem;
   margin-top: 0.5rem;
   color: #e70000;
 }
+/* les textes (entrevues et regard */
 .homepage_title {
   width: 100%;
   color: #000;
@@ -2101,17 +2104,15 @@ a {
   font-size: 1.1rem;
   align-items: center;
 }
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 2rem;
-}
+
+/***** regard sur le cinema *****/
+/* sous-titre */
 .regard_cinema {
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 2.188rem;
 }
+/* ligne rouge sous le sous-titre */
 .regard_cinema::after {
   content: "";
   width: auto;
@@ -2124,7 +2125,7 @@ a {
 .regard {
   color: #E70000 ;
 }
-
+/**** le side scroll sur mobile ****/
 @media screen and (max-width: 1250px) {
   .wrapper {
     width: 100%;
@@ -2156,12 +2157,14 @@ a {
 }
 
 
-
+/**** rendez-vous avec le cinema Belge ****/
+/* sous-titre */
 .rendez_vous_cine {
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 2.188rem;
 }
+/* ligne rouge sous le sous-titre */
 .rendez_vous_cine::after {
   content: "";
   width: auto;
@@ -2175,6 +2178,8 @@ a {
 .vos_rendez_vous {
   color: #e70000;
 }
+
+/* les cards */
 .poster_text_rdv {
   display: flex;
   text-wrap: wrap;
@@ -2202,34 +2207,15 @@ a {
   margin-right: 4rem;
 }
 
-.poster_text_rdv {
-  display: flex;
-  text-wrap: wrap;
-  padding-right: 1rem;
+@media screen and (max-width: 760px) {
+  .grid_layout_rdv {
+    grid-template-columns: 1fr;
+  }
 }
 
-.grid1_btn_rdv{
-  width: 100%;
-  background-color: var(--bs-primary);
-  border: solid 1px black;
-  text-align: center;
-  border-radius: 0 0 13px 13px;
-  /* margin-top: 1rem; */
-  border-color: var(--bs-primary);
 
-}
 
-.grid_layout_rdv {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  margin-top: 1rem;
-  row-gap: 1rem;
-  gap: 1rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  
-}
+
 
 
 
