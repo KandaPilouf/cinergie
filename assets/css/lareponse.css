@@ -1643,7 +1643,7 @@ a {
 
 /********CSS Homepage********/
 
-.entrevues_film{
+.entrevues_film {
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 2.188rem;
@@ -1763,7 +1763,6 @@ a {
 }
 .poster_text_rdv {
   display: flex;
-  margin-left: ;
   text-wrap: wrap;
   padding-right: 1rem;
 }
