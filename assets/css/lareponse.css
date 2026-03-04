@@ -2104,6 +2104,11 @@ a {
   font-size: 1.1rem;
   align-items: center;
 }
+.homepage_click{
+  text-transform: capitalize;
+  margin-left: 7%;
+  color: #e70000;
+}
 
 /***** regard sur le cinema *****/
 /* sous-titre */
