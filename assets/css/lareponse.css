@@ -1650,23 +1650,24 @@ a {
 .entrevues {
   color: #E70000 ;
 }
-.entrevues_item {
+.homepage_item {
   border-radius: 42px;
   box-shadow: 0 4px 11px black;
-  height: 24rem;
-  width:24rem;
+  height: 23rem;
+  width: 23rem;
 }
-.entrevues_img {
+.homepage_img {
   height: 50% ;
   width: 100% ;
   border-radius: 42px 42px 0 0;
   
 }
-.entrevues_date {
+.homepage_date {
   margin-left: 0.6rem;
   margin-top: 0.5rem;
+  color: #E70000;
 }
-.entrevues_title {
+.homepage_title {
   width: 100%;
   color: #000;
   text-align: center;
@@ -1677,6 +1678,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  gap: 2rem;
+  
+  
 }
 .regard_cinema {
   margin-left: 6.25rem;
@@ -1685,5 +1689,45 @@ a {
 .regard {
   color: #E70000 ;
 }
+
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  .wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  .wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .wrapper .homepage_item {
+    flex-shrink: 0;
+    flex-grow: 0;
+    line-height: 110px;
+  }
+}
+
+.rendez_vous_cine {
+  margin-left: 6.25rem;
+  margin-top: 2.188rem;
+}
+.vos_rendez_vous {
+  color: #E70000 ;
+}
+
+
 
 
