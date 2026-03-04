@@ -67,6 +67,29 @@
   --space-tiny: 0.7rem;
   --space-small: 1.1rem;
   --space-regular: 1.7rem;
+
+  --nh-red: #b0302e; /* rouge ligne + badge */
+  --nh-text: #1f1f1f; /* texte */
+  --nh-bg: #ffffff;
+
+  --nh-line-x: 34px; /* position ligne */
+  --nh-line-w: 2px; /* épaisseur ligne */
+  --nh-gap-left: 92px; /* espace total avant le texte */
+  --nh-badge-fs: 13px; /* taille texte badge */
+  --nh-body-fs: 14px; /* taille texte */
+  --nh-body-lh: 1.6; /* line-height */
+  --nh-item-space: 26px; /* espace entre items */
+  --nh-red: #b0302e; /* rouge ligne + badge */
+  --nh-text: #1f1f1f; /* texte */
+  --nh-bg: #ffffff;
+
+  --nh-line-x: 34px; /* position ligne */
+  --nh-line-w: 2px; /* épaisseur ligne */
+  --nh-gap-left: 92px; /* espace total avant le texte */
+  --nh-badge-fs: 13px; /* taille texte badge */
+  --nh-body-fs: 14px; /* taille texte */
+  --nh-body-lh: 1.6; /* line-height */
+  --nh-item-space: 26px; /* espace entre items */
 }
 /* 
 [data-theme="dark"] {
@@ -1641,12 +1664,277 @@ a {
   }
 }
 
+/* ===== NOTRE HISTOIRE (Figma) ===== */
+
+.nh-page {
+  background: #fff;
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+.nh-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+.nh-title-red {
+  color: var(--primary);
+}
+
+.nh-title-underline {
+  margin-top: 14px;
+  height: 3px;
+  width: 520px;
+  background: var(--primary);
+}
+
+.nh-timeline {
+  margin-top: 26px;
+}
+
+/* layout : bulle à gauche + texte à droite */
+.nh-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 22px;
+  align-items: start;
+  margin: 0 0 42px;
+}
+
+/* bulle année */
+.nh-year {
+  justify-self: center;
+  background: #fff;
+  border: 3px solid var(--primary);
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #111;
+}
+
+/* contenu */
+.nh-content {
+  max-width: 620px;
+}
+
+.nh-lead {
+  margin: 0 0 14px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.nh-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/*  petit losange rouge */
+.nh-diamond {
+  width: 14px;
+  height: 14px;
+  background: var(--primary);
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+
+/* bouton top simple */
+#scroll-to-top {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 9999;
+}
+
+#scroll-to-top a {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* responsive */
+@media (max-width: 640px) {
+  .nh-title {
+    font-size: 36px;
+  }
+  .nh-title-underline {
+    width: 320px;
+  }
+
+  .nh-item {
+    grid-template-columns: 120px 1fr;
+    gap: 14px;
+  }
+
+  .nh-text {
+    line-height: 1.75;
+  }
+}
+
+/* ===== NOTRE HISTOIRE (Figma) ===== */
+
+.nh-page {
+  background: #fff;
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+.nh-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+.nh-title-red {
+  color: var(--primary);
+}
+
+.nh-title-underline {
+  margin-top: 14px;
+  height: 3px;
+  width: 520px;
+  background: var(--primary);
+}
+
+.nh-timeline {
+  margin-top: 26px;
+}
+
+/* layout : bulle à gauche + texte à droite */
+.nh-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 22px;
+  align-items: start;
+  margin: 0 0 42px;
+}
+
+/* bulle année */
+.nh-year {
+  justify-self: center;
+  background: #fff;
+  border: 3px solid var(--primary);
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #111;
+}
+
+/* contenu */
+.nh-content {
+  max-width: 620px;
+}
+
+.nh-lead {
+  margin: 0 0 14px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.nh-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/*  petit losange rouge */
+.nh-diamond {
+  width: 14px;
+  height: 14px;
+  background: var(--primary);
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+
+/* bouton top simple */
+#scroll-to-top {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 9999;
+}
+
+#scroll-to-top a {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* responsive */
+@media (max-width: 640px) {
+  .nh-title {
+    font-size: 36px;
+  }
+  .nh-title-underline {
+    width: 320px;
+  }
+
+  .nh-item {
+    grid-template-columns: 120px 1fr;
+    gap: 14px;
+  }
+
+  .nh-text {
+    line-height: 1.75;
+  }
+}
+
 /********CSS Homepage********/
 
 .entrevues_film {
   margin-left: 7%;
   margin-right: 7%;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-top: 2.188rem;
+}
+.entrevues_film::after {
+  content: "";
+  width: auto;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  transform: translateY(27px);
+  margin: 0 auto;
 }
 .entrevues_film::after {
   content: "";
@@ -1666,17 +1954,21 @@ a {
   height: 22rem;
   width: 22rem;
   margin: 2rem;
+  box-shadow: 0px 1px 7px 0px black;
+  height: 22rem;
+  width: 22rem;
+  margin: 2rem;
 }
 .homepage_img {
-  height: 50% ;
-  width: 100% ;
+  height: 50%;
+  width: 100%;
   border-radius: 42px 42px 0 0;
   
 }
 .homepage_date {
   margin-left: 0.6rem;
   margin-top: 0.5rem;
-  color: #E70000;
+  color: #e70000;
 }
 .homepage_title {
   width: 100%;
@@ -1690,8 +1982,6 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   gap: 2rem;
-  
-  
 }
 .regard_cinema {
   margin-left: 7%;
@@ -1759,7 +2049,160 @@ a {
 }
 
 .vos_rendez_vous {
-  color: #E70000 ;
+  color: #e70000;
+}
+.poster_text_rdv {
+  display: flex;
+  text-wrap: wrap;
+  padding-right: 1rem;
+}
+
+.grid1_btn_rdv {
+  width: 100%;
+  background-color: var(--bs-primary);
+  border: solid 1px black;
+  text-align: center;
+  border-radius: 0 0 13px 13px;
+  /* margin-top: 1rem; */
+  border-color: var(--bs-primary);
+}
+
+.grid_layout_rdv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 1rem;
+  row-gap: 1rem;
+  gap: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+/* ===== NOTRE HISTOIRE (Figma) ===== */
+
+.nh-page {
+  background: #fff;
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+.nh-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+.nh-title-red {
+  color: var(--primary);
+}
+
+.nh-title-underline {
+  margin-top: 14px;
+  height: 3px;
+  width: 520px;
+  background: var(--primary);
+}
+
+.nh-timeline {
+  margin-top: 26px;
+}
+
+/* layout : bulle à gauche + texte à droite */
+.nh-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 22px;
+  align-items: start;
+  margin: 0 0 42px;
+}
+
+/* bulle année */
+.nh-year {
+  justify-self: center;
+  background: #fff;
+  border: 3px solid var(--primary);
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #111;
+}
+
+/* contenu */
+.nh-content {
+  max-width: 620px;
+}
+
+.nh-lead {
+  margin: 0 0 14px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.nh-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/*  petit losange rouge */
+.nh-diamond {
+  width: 14px;
+  height: 14px;
+  background: var(--primary);
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+
+/* bouton top simple */
+#scroll-to-top {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 9999;
+}
+
+#scroll-to-top a {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* responsive */
+@media (max-width: 640px) {
+  .nh-title {
+    font-size: 36px;
+  }
+  .nh-title-underline {
+    width: 320px;
+  }
+
+  .nh-item {
+    grid-template-columns: 120px 1fr;
+    gap: 14px;
+  }
+
+  .nh-text {
+    line-height: 1.75;
+  }
 }
 .poster_text_rdv {
   display: flex;
