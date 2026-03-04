@@ -2217,6 +2217,12 @@ a {
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 450px) {
+  .grid_layout_rdv {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 
 /******* Article *******/
 
