@@ -1581,10 +1581,11 @@ a {
 
 .grid_layout {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   margin-top: 1rem;
   row-gap: 1rem;
+  column-gap: 2rem;
 }
 
 .grid_layout::after {
