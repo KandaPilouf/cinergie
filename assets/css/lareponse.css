@@ -2206,13 +2206,53 @@ a {
   margin-left: 4rem;
   margin-right: 4rem;
 }
-
+/* les cards se mettent l'une au dessus de l'autre sur mobile */
 @media screen and (max-width: 760px) {
   .grid_layout_rdv {
     grid-template-columns: 1fr;
   }
 }
 
+/******* Article *******/
+
+.article_img_container {
+  width: 100%;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.article_main_img {
+  border-radius: 7px;
+  width: 80%; 
+}
+.article_title{
+  margin-top: 1rem;
+}
+.span_article_title {
+  color: #e70000;
+}
+.article_svg_container{
+  display: flex;
+  gap: 0.5rem;
+}
+.article_svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.p_svg {
+  margin: 0;
+  padding: 0;
+}
+
+.article_intro{
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.dash {
+  color: #e70000;
+}
 
 
 
