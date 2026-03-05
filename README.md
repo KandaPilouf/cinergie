@@ -6,6 +6,7 @@ nous avons privilégié le mobile first tout en gardant le mode desktop cohéren
 ###  &#x2605; Général
 - liens vers les pages modifiées fonctionnels (navbar et footer)
 - responsive
+- menu burger fonctionnel (version non finale)
 
 ### &#x2605; Homepage
 - refonte des cards
