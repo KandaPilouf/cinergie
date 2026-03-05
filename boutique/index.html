@@ -250,27 +250,106 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="bi "><title>search</title><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path></svg>        </button>
     </div>
 </form>
-<header>
-    <div class="fixed-layout no-break">
-        <a href="../index.html" title="CINERGIE">
-            <img src="../assets/images/logo-cinergie.png" alt="Logo de Cinergie.be" class="logo" width="225" height="48">
-        </a>
 
-        <nav id="primary-navigation" role="navigation">
-            <ul> <li><a class="" href="../article/index.html">Articles</a></li><li><a class="" href="../calendar/index.html">Agenda</a></li><li><a class="" href="/films/">Filmothèque</a></li><li><a class="" href="/personnes/">Professionnel·le·s</a></li><li><a class="" href="/organisations/">Organisations</a></li><li><a class="" href="/annonces">Castings & Jobs</a></li><li><a class="" href="../boutique/index.html">Boutique</a></li><li><a class="" href="/podcast">Podcast</a></li>            </ul>
-        </nav>
 
-        <div class="nav-controls">
-            <button class="toggler" type="button" aria-controls="search-bar" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="bi "><title>search</title><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path></svg>            </button>
+<header class="c-header">
+<div class="fixed-layout c-header__bar no-break">
+<!-- Logo -->
+<a class="c-brand" href="../assets/images/logo-cinergie.png" title="CINERGIE" aria-label="Retour à l’accueil">
+<img
 
-            <button class="toggler" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="bi "><title>filter-right</title><path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5"></path></svg>            </button>
-        </div>
-    </div>
+         src="../assets/images/logo-cinergie.png"
+
+         alt="Logo de Cinergie.be"
+
+         class="c-brand__logo"
+
+         width="225"
+
+         height="48"
+
+       />
+</a>
+ 
+    <!-- Boutons -->
+<div class="c-controls">
+<!-- Search toggle -->
+<button
+
+         class="c-btn c-btn--icon"
+
+         type="button"
+
+         aria-controls="search-bar"
+
+         aria-expanded="false"
+
+         data-toggle="panel"
+
+         title="Rechercher"
+>
+<span class="visually-hidden">Ouvrir la recherche</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+<path
+
+             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+
+           />
+</svg>
+</button>
+ 
+      <!-- Burger -->
+<button
+
+         class="c-btn c-btn--burger"
+
+         type="button"
+
+         aria-controls="primary-navigation"
+
+         aria-expanded="false"
+
+         data-toggle="menu"
+
+         title="Menu"
+>
+<span class="visually-hidden">Ouvrir le menu</span>
+<span class="c-burger" aria-hidden="true"></span>
+</button>
+</div>
+</div>
+ 
+  <!-- SEARCH BAR (panel déroulant) -->
+<section id="search-bar" class="c-panel" hidden>
+<div class="fixed-layout c-panel__inner">
+<form class="c-search" role="search" action="/search" method="get">
+<label class="visually-hidden" for="q">Rechercher</label>
+<input id="q" name="q" type="search" placeholder="Rechercher…" />
+<button type="submit">OK</button>
+</form>
+</div>
+</section>
+ 
+  <!-- MENU (panel déroulant) -->
+<nav id="primary-navigation" class="c-menu" aria-label="Navigation principale" hidden>
+<div class="fixed-layout c-menu__inner">
+<ul class="c-menu__list">
+<li><a href="../article/index.html">Articles</a></li>
+<li><a href="../calendar/index.html">Agenda</a></li>
+<li><a href="/films/">Filmothèque</a></li>
+<li><a href="/personnes/">Professionnel·le·s</a></li>
+<li><a href="/organisations/">Organisations</a></li>
+<li><a href="/annonces">Castings & Jobs</a></li>
+<li><a href="../boutique/index.html">Boutique</a></li>
+<li><a href="/podcast">Podcast</a></li>
+</ul>
+</div>
+</nav>
+ 
+  <!-- Backdrop -->
+
+
 </header>
-
-
 
 
 <script nonce="04223beac110c7e9f25802604db41148">
@@ -680,6 +759,149 @@
 <script type="module" nonce="04223beac110c7e9f25802604db41148">
     document.addEventListener("DOMContentLoaded", () => {
             });
+</script>
+
+<script>
+
+   document.addEventListener("DOMContentLoaded", () => {
+
+     const root = document.documentElement;
+
+     const backdrop = document.querySelector(".c-backdrop");
+
+     const buttons = document.querySelectorAll("[data-toggle][aria-controls]");
+ 
+    function setOpen(btn, open) {
+
+       const id = btn.getAttribute("aria-controls");
+
+       const panel = document.getElementById(id);
+
+       if (!panel) return;
+ 
+      btn.setAttribute("aria-expanded", String(open));
+ 
+      if (open) {
+
+         panel.hidden = false;
+
+         requestAnimationFrame(() => panel.classList.add("is-open"));
+
+         backdrop.hidden = false;
+
+         root.classList.add("no-scroll");
+ 
+        if (id === "search-bar") {
+
+           const input = panel.querySelector("input");
+
+           if (input) input.focus();
+
+         }
+
+       } else {
+
+         panel.classList.remove("is-open");
+
+         // attend la fin de transition pour éviter “flash”
+
+         window.setTimeout(() => {
+
+           panel.hidden = true;
+
+         }, 180);
+
+       }
+
+     }
+ 
+    function closeAll() {
+
+       buttons.forEach((b) => setOpen(b, false));
+
+       backdrop.hidden = true;
+
+       root.classList.remove("no-scroll");
+
+     }
+ 
+    buttons.forEach((btn) => {
+
+       btn.addEventListener("click", (e) => {
+
+         e.preventDefault();
+ 
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+ 
+        // ferme les autres
+
+         buttons.forEach((other) => {
+
+           if (other !== btn) setOpen(other, false);
+
+         });
+ 
+        // toggle celui-ci
+
+         setOpen(btn, !isOpen);
+ 
+        // si on vient de fermer et plus rien n’est ouvert:
+
+         const anyOpen = Array.from(buttons).some(
+
+           (b) => b.getAttribute("aria-expanded") === "true"
+
+         );
+
+         if (!anyOpen) {
+
+           backdrop.hidden = true;
+
+           root.classList.remove("no-scroll");
+
+         }
+
+       });
+
+     });
+ 
+    // fermer au clic backdrop + ESC
+
+     backdrop.addEventListener("click", closeAll);
+
+     document.addEventListener("keydown", (e) => {
+
+       if (e.key === "Escape") closeAll();
+
+     });
+ 
+    // Desktop reset
+
+     window.addEventListener("resize", () => {
+
+       if (window.innerWidth >= 1200) closeAll();
+
+     });
+ 
+    // Fermer quand on clique un lien du menu (mobile)
+
+     const nav = document.getElementById("primary-navigation");
+
+     if (nav) {
+
+       nav.addEventListener("click", (e) => {
+
+         const link = e.target.closest("a");
+
+         if (!link) return;
+
+         if (window.innerWidth < 1200) closeAll();
+
+       });
+
+     }
+
+   });
 </script>
 
 </body></html>

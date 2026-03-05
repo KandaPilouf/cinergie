@@ -2456,3 +2456,332 @@ a {
   background-color: var(--bs-primary);
   color: white;
 }
+
+/* NAVBAR RE */
+
+/* =========================
+
+    CINERGIE NAVBAR (mobile-first)
+
+    Compatible avec .fixed-layout et tes variables
+
+    ========================= */
+
+.c-header {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 9999;
+
+  background: var(--black);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+html.no-scroll,
+html.no-scroll body {
+  overflow: hidden;
+}
+
+.c-header__bar {
+  display: grid;
+
+  grid-template-columns: auto 1fr auto;
+
+  align-items: center;
+
+  gap: 0.75rem;
+
+  padding: 0.5rem 1rem;
+}
+
+.c-brand {
+  display: inline-flex;
+
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.c-brand__logo {
+  width: auto;
+
+  max-height: 3rem;
+}
+
+.c-controls {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.5rem;
+
+  justify-content: end;
+}
+
+.c-btn {
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  color: var(--white);
+
+  border-radius: 999px;
+
+  width: 44px;
+
+  height: 44px;
+
+  display: grid;
+
+  place-items: center;
+
+  cursor: pointer;
+}
+
+.c-btn svg {
+  width: 18px;
+
+  height: 18px;
+
+  fill: currentColor;
+
+  color: var(--white);
+}
+
+.c-btn:hover {
+  border-color: rgba(231, 0, 0, 0.5);
+}
+
+/* Burger icon */
+
+.c-burger {
+  width: 18px;
+
+  height: 2px;
+
+  background: var(--primary);
+
+  border-radius: 999px;
+
+  position: relative;
+}
+
+.c-burger::before,
+.c-burger::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  width: 18px;
+
+  height: 2px;
+
+  background: var(--primary);
+
+  border-radius: 999px;
+}
+
+.c-burger::before {
+  top: -6px;
+}
+
+.c-burger::after {
+  top: 6px;
+}
+
+/* Panels (search + menu) */
+
+.c-panel,
+.c-menu {
+  background: black;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  /* animation */
+
+  transform: translateY(-8px);
+
+  opacity: 0;
+
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+
+  will-change: transform, opacity;
+}
+
+.c-panel.is-open,
+.c-menu.is-open {
+  transform: translateY(0);
+  display: block;
+  opacity: 1;
+}
+
+.c-panel__inner {
+  padding: 0.8rem 1rem 1rem;
+}
+
+/* Search */
+
+.c-search {
+  display: flex;
+
+  gap: 0.6rem;
+
+  align-items: center;
+}
+
+.c-search input {
+  flex: 1 1 auto;
+
+  min-height: 44px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  background: rgba(0, 0, 0, 0.25);
+
+  color: var(--white);
+
+  padding: 0.65rem 0.85rem;
+}
+
+.c-search input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.c-search button {
+  min-height: 44px;
+
+  padding: 0.65rem 1rem;
+
+  border-radius: 12px;
+
+  border: 1px solid var(--primary);
+
+  background: transparent;
+
+  color: var(--white);
+
+  cursor: pointer;
+}
+
+.c-search button:hover {
+  background: var(--primary);
+}
+
+/* Menu list */
+
+.c-menu__inner {
+  padding: 0.6rem 1rem 1rem;
+}
+
+.c-menu__list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.25rem;
+}
+
+.c-menu__list a {
+  display: block;
+
+  padding: 0.9rem 0.85rem;
+
+  border-radius: 12px;
+
+  color: var(--white);
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  font-weight: 600;
+
+  font-size: 0.95rem;
+
+  letter-spacing: 0.3px;
+}
+
+.c-menu__list a:hover {
+  background: black;
+}
+
+/* Backdrop */
+
+.c-backdrop {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: 9998;
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .c-btn--burger {
+    display: none;
+  }
+
+  /* Menu visible en desktop */
+
+  #primary-navigation {
+    transform: none !important;
+
+    opacity: 1 !important;
+
+    display: block !important;
+  }
+
+  #primary-navigation[hidden] {
+    display: block !important;
+  }
+
+  .c-menu__inner {
+    padding: 0.5rem 1rem;
+  }
+
+  .c-menu__list {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    gap: 0.4rem;
+
+    justify-content: space-around;
+  }
+
+  .c-menu__list a {
+    padding: 0.55rem 0.75rem;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+  }
+
+  /* Backdrop inutile desktop */
+
+  .c-backdrop {
+    display: none !important;
+  }
+
+  html.no-scroll,
+  html.no-scroll body {
+    overflow: auto;
+  }
+}
