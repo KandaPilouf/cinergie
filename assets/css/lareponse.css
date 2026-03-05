@@ -2237,7 +2237,7 @@ a {
 }
 
 /******* Article *******/
-
+/* image de l'article */
 .article_img_container {
   width: 100%;
   margin-top: 2.5rem;
@@ -2248,6 +2248,7 @@ a {
   border-radius: 7px;
   width: 80%;
 }
+/* titre de l'article */
 .article_title {
   margin-top: 1rem;
 }
@@ -2268,21 +2269,25 @@ a {
   margin: 0;
   padding: 0;
 }
+/* intro de l'article */
 
 .article_intro {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
+/* le tiret */
 .dash {
   color: #e70000;
 }
 
+/* reseaux sociaux */
 .share_socials {
   font-size: 0.9rem;
 }
 .content_title {
   margin-top: 2rem;
 }
+/* ligne rouge sous le sous-titre */
 .content_title::after {
   content: "";
   width: auto;
@@ -2292,11 +2297,13 @@ a {
   transform: translateY(27px);
   margin: 0 auto;
 }
+/* lien pour lire l'article */
 .article_click {
   text-align: end;
   margin-right: 0.6rem;
   color: #e70000;
 }
+
 
 .nh-text {
   line-height: 1.75;
